@@ -1,0 +1,10 @@
+<?php
+function bda_store_post_id_for_js() {
+?>
+<script type="text/javascript">
+	var currentpostid = <?php echo get_the_ID(); ?>;
+</script>
+<?php
+}
+add_action('wp_head', 'bda_store_post_id_for_js');
+?>
